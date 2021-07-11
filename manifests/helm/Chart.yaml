@@ -1,0 +1,10 @@
+apiVersion: v1
+name: python-helloworld 
+description: Install Python HelloWorld
+keywords:
+- python
+- helloworld 
+version: 3.7.0
+maintainers:
+- name: Johannes Heinzl 
+  email: jh.heinzl@gmail..com
