@@ -24,6 +24,11 @@ spec:
         tag: {{ .Values.image.tag }}
     spec:
       containers:
-      - image: {{ .Values.image.repository }}:{{ .Values.image.repository.tag }}
+      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pull.policy }}
         name: {{ .Values.image.repository }}-{{ .Values.image.tag }}
+        resources:
+          requests:
+            cpu: {{ .Values.resources.CPU }}
+            memory: {{ .Values.resources.memory }}
+
